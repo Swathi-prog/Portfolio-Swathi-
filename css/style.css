@@ -1,32 +1,27 @@
-<style>
-  body {
-    background-color: SkyBlue;
-  }
-</style>
+
 /*
 Colors used:
-Primary Color (Blue): #05676e;
-Secondary Color (Green): #489c79;
+Primary Color (Blue): #C3E5E7;
+Secondary Color (Green): #DD8627;
 */
 body {
 
-  background-color: #87CEEB;
+  background-color: #C3E5E7;
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
   color: #4a4a4a;
 }
 .logo{
 max-width:250px;
 }
-.logo:hover {
-    transform: rotateY(180deg)
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
@@ -46,52 +41,30 @@ h4 {
 img {
   width: 100%;
 }
-a {
+a {                                            /*DD8627, ff7f50*/
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
 }
+a:visited {
+  color: #ff7f50;
+}
+
 a:hover {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:visited { /* visited link */
-  color: #ff7f50;
-}
-a:active { /* selected link */
-  color: #994c30;
-}
-a:hover,
-a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
-a {/* element selector */
-  color: red;
+a:active {
+  color: #994c30;
 }
-
-#my-link {/* id selector */
-  color: green;
-}
-
-.my-link {/* class selector */
-  color: blue;
-}
-
-
-
-
-
-
-
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #ff7f50;
   color: #ffffff !important; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
 }
 .button:hover {
