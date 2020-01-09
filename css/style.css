@@ -1,1 +1,178 @@
+/*
+Colors used:
+Primary Color (Blue): #C3E5E7;
+Secondary Color (orange): #DD8627;
+*/
 
+
+
+header {
+  background-color: #C3E5E7;
+  text-align: center;
+  position:fixed;
+  width;100%;
+  padding:10px;
+  font size:0.75em;
+
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+
+}
+* {
+  box-sizing: border-box;
+}
+body{
+
+  background-color: #C3E5E7;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+
+.logo{
+max-width:250px;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.50em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+ {                                            /*DD8627, ff7f50*/
+  color: #ff7f50;
+  text-decoration: none;
+}
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: #ffffff !important; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+}
+
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+  width:100%;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: left;
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+.logo {
+  max-width: 250px;
+}
+
+
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 1px;
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+
+#hero {
+  background-color: #C3E5E7;
+  text-align: left
+  width:100%;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+main {
+  padding-top: 155px;
+}
+.social li{
+  float:left;
+  width:50px;
+  margin:10px;
+}
