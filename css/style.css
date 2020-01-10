@@ -4,59 +4,9 @@ Primary Color (Blue): #C3E5E7;
 Secondary Color (orange): #DD8627;
 */
 
-
-
-header {
-  background-color: #C3E5E7;
-  text-align: center;
-  position:fixed;
-  width: 100%;
-  padding:10px 0;
-border-bottom: 3px solid #4a4a4a;
-
-}
-
-img{
-  border-style:none;
-  width: 100%;
-}
-/* top | right | bottom | left */
-margin: 0px 10% 0em 10%;
-
-
 * {
   box-sizing: border-box;
 }
-
-
-
-.logo{
-max-width:250px;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.4;
-}
-h1 {
-  font-size: 1.8em;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2em;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-}
-h4 {
-  font-size: 1.50em;
-  font-weight: 400;
-}
-
-
 
 body{
 
@@ -68,6 +18,35 @@ body{
   color: #4a4a4a;
 }
 
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+
+
+
+a {
+  color: #ff7f50;
+
+}
 
 a:visited { /* visited link */
   color: #ff7f50;
@@ -82,6 +61,18 @@ a:focus {
 a:active { /* selected link */
   color: #994c30;
 }
+
+
+
+img{
+  border-style:none;
+  width: 100%;
+}
+
+
+
+
+
 
 
 .button {
@@ -111,22 +102,21 @@ a:active { /* selected link */
   color: #ffffff !important;
 }
 
+/*header*/
 
-
-/* Layout styling */
-
-.container {
-  padding: 0 15px;
+header {
+  background-color: #C3E5E7;
+  text-align: center;
+  position:fixed;
+  width: 100%;
+  padding:10px 0;
+border-bottom: 3px solid #4a4a4a;
 
 }
 
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+.logo{
+max-width:250px;
 }
-
-
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
 
 
 nav > ul {
@@ -141,8 +131,7 @@ nav > ul > li {
 nav > ul > li > a {
 
 
-padding-left: 10px;
-padding-right: 10px;
+padding: 0 10px;
 
 
 
@@ -157,15 +146,26 @@ padding-right: 10px;
 
 
 
-
-#hero h1 {
-  margin: 0;
-  padding: 0.67em 0;
-}
-
+/*containers, rows, columns*/
 main {
-  padding-top: 155px;
+padding-top: 155px;
 }
+
+.container {
+  padding: 0 15px;
+
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+
+/*footer*/
+
+
 
 
 .social li {
@@ -173,4 +173,11 @@ width: 50px;
 float: left;
 margin: 10px;
 list-style-type: none;
+}
+
+/*hero*/
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
 }
