@@ -10,52 +10,50 @@ Secondary Color (orange): #DD8627;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #C3E5E7;
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   color: #4a4a4a;
-  text-align: center;
 
 }
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    text-align: left;
-}
-
-
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 1.8em;
   font-weight: 700;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.6em;
   font-weight: 700;
   text-align: center;
-
+  background: #ff9966;
+  color:black;
+  padding:10px;
 }
 
+
 h3 {
-  font-size: 1.75em;
+  font-size: 1.4em;
   font-weight: 700;
+
 
 
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.2em;
   font-weight: 400;
 }
+
+
+
 
 
 
@@ -63,7 +61,6 @@ h4 {
 
 a {
   color: #ff7f50;
-  text-decoration: none;
 }
 
 a:visited { /* visited link */
@@ -81,8 +78,7 @@ a:active { /* selected link */
 }
 
 
-img{
-  border-style:none;
+img {
   width: 100%;
 }
 
@@ -95,14 +91,13 @@ img{
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
-  text-decoration: none
+  text-decoration: none;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
 .button:hover
 .button.focus {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
 
 .button.contact {
@@ -110,13 +105,17 @@ img{
   color: #ff7f50 !important;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
-
+width: 100%;
+text-align: center;
 }
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff !important;
 }
 
+.caption {
+  font-style: italic;
+}
 /*header*/
 
 header {
@@ -128,13 +127,15 @@ header {
 box-shadow: 4px 4px 5px 0 rgba(50, 50, 50, 0.25);
 }
 
-.logo{
-max-width:250px;
+.logo {
+max-width:150px;
 }
 
 nav > ul {
   list-style-type: none;
 padding: 0;
+margin-bottom: 0;
+margin-top:5px;
 
 }
 
@@ -145,28 +146,30 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 600;
   color: #ff7f50;
   font-size: 1.4em;
+  text-decoration: none;
 
 }
 
 nav > ul > li > a: hover,
 nav > ul > li > a: focus{
-  color: #697385
+  color: #697385;
 
 }
 
 nav > ul > li > a: active{
-  color: #2a665a
+  color: #2a665a;
 }
 
 /*containers, rows, columns*/
 main {
-padding-top: 100px;
+padding-top: 107px;
 }
+
 
 .container {
   padding: 0 15px;
@@ -177,23 +180,43 @@ padding-top: 100px;
 }
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work h2 {
+  text-align: center;
+}
+
+
 
 /*footer*/
-
+#contact{
+  text-align: center;
+  background: black;
+  padding: 30px 0px;
+  color:#ffffff
+}
+.social ul li {
+list-style-type: none;
+padding:0;
+}
 .social li {
 width: 50px;
-float: left;
+display: inline-block;
 margin: 10px;
 list-style-type: none;
 text-align: center;
+padding:none;
 }
 
 /*hero*/
 
+#hero {
+  background: bisque;
+}
 #hero h1 {
-  margin: 0;
-  padding: 0.67em 0;
+
+  padding-bottom: 30px;
   text-align: center;
+
+
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -204,7 +227,10 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+#work h3{
+  margin-top: 0;
 
+}
   nav {
     width: auto;
     float: right
@@ -212,6 +238,7 @@ Medium devices (640px and larger)
 #hero span {
   display: block;
   font-weight: 500;
+
 }
 
 .col-md-6 {
@@ -222,12 +249,7 @@ Medium devices (640px and larger)
   padding-left: 10px;
   padding-right: 10px;
 }
-#caption {
-    width: 70%;
-    margin: auto;
-    text-align: center;
 
-  }
 
 .row::after {
   content: "";
@@ -251,8 +273,11 @@ Large devices (1024px or larger)
 /* X-Large Devices (1440px and and larger) */
 @media only screen and (min-width: 1440px) {
   body {
-    font-size: 26px;
+    font-size: 22px;
 
+  }
+  #hero {
+    text-align: center;
   }
 }
 /*CSS Animations*/
