@@ -120,13 +120,19 @@ text-align: center;
 
 header {
   background-color: #C3E5E7;
-  text-align: center;
-  position:fixed;
   width: 100%;
-  padding:10px 0;
+  padding:10px 0 4px;
 box-shadow: 4px 4px 5px 0 rgba(50, 50, 50, 0.25);
+position: fixed
 }
 
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
 .logo {
 max-width:150px;
 }
@@ -134,16 +140,10 @@ max-width:150px;
 nav > ul {
   list-style-type: none;
 padding: 0;
-margin-bottom: 0;
-margin-top:5px;
-
+margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-  font-size: 0.75em;
 
-}
 
 nav > ul > li > a {
   padding: 0 10px;
@@ -164,10 +164,37 @@ nav > ul > li > a: focus{
 nav > ul > li > a: active{
   color: #2a665a;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 
 /*containers, rows, columns*/
 main {
-padding-top: 107px;
+padding-top: 56px;
 }
 
 
@@ -213,10 +240,11 @@ padding:none;
 }
 #hero h1 {
 
-  padding-bottom: 30px;
-  text-align: center;
-
-
+  background-color: bisque;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+text-align: center;
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -227,6 +255,10 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+  main {
+      padding-top: 80px;
+    }
+
 #work h3{
   margin-top: 0;
 
@@ -234,6 +266,19 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+  nav > ul {
+  margin: 1em 0;
+}
+nav > ul > li {
+    display: inline-block;
   }
 #hero span {
   display: block;
