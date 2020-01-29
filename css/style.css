@@ -237,6 +237,7 @@ padding:none;
 
 #hero {
   background: bisque;
+  padding-bottom: 10px;
 }
 #hero h1 {
 
@@ -245,6 +246,7 @@ padding:none;
     display: inline-block;
     width: 100%;
 text-align: center;
+
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -261,6 +263,7 @@ Medium devices (640px and larger)
 
 #work h3{
   margin-top: 0;
+
 
 }
   nav {
@@ -315,6 +318,19 @@ Large devices (1024px or larger)
   margin-right: auto;
 }
 
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+width: 40%;
+text-align: center;
+}
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+}
+}
 /* X-Large Devices (1440px and and larger) */
 @media only screen and (min-width: 1440px) {
   body {
@@ -323,6 +339,7 @@ Large devices (1024px or larger)
   }
   #hero {
     text-align: center;
+
   }
 }
 /*CSS Animations*/
