@@ -10,8 +10,8 @@ Secondary Color (orange): #DD8627;
 }
 
 body {
-  background-color: #C3E5E7;
-  font-family: 'Quicksand', sans-serif;
+  background-color: white;
+  font-family: 'montserrat', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
@@ -23,7 +23,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 700;
   padding-left: 10px;
   padding-right: 10px;
@@ -33,7 +33,7 @@ h2 {
   font-size: 1.6em;
   font-weight: 700;
   text-align: center;
-  background: #348a95;
+
   color: black;
   padding: 1px;
 }
@@ -214,8 +214,12 @@ main {
 #contact {
   text-align: center;
   background: black;
-  padding: 30px 0px;
-  color: #ffffff
+  padding: 20px 0px;
+  color: #ffffff;
+}
+
+#contact h2 {
+  color: white;
 }
 
 .social ul li {
@@ -234,12 +238,12 @@ main {
 
 /*hero*/
 #hero {
-  background: bisque;
+  background: white;
   padding-bottom: 10px;
 }
 
 #hero h1 {
-  background-color: bisque;
+  background-color: white;
   padding: 10px 0;
   display: inline-block;
   width: 100%;
@@ -254,7 +258,10 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
+img{
+  padding-left: 70px;
+  padding-right: 70px;
+}
   main {
     padding-top: 80px;
   }
